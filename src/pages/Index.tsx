@@ -16,10 +16,16 @@ const Index = () => {
           <Button
             variant="outline"
             className="border-game-orange text-game-orange hover:bg-game-orange hover:text-white"
+            onClick={() => window.open("https://1win.com/login", "_blank")}
           >
             Войти
           </Button>
-          <Button className="bg-game-orange hover:bg-orange-600">
+          <Button
+            className="bg-game-orange hover:bg-orange-600"
+            onClick={() =>
+              window.open("https://1win.com/registration", "_blank")
+            }
+          >
             1WIN Регистрация
           </Button>
         </div>
@@ -43,6 +49,9 @@ const Index = () => {
             <Button
               size="lg"
               className="bg-gradient-to-r from-game-orange to-red-500 text-white text-xl px-8 py-4 hover:scale-105 transition-transform"
+              onClick={() =>
+                window.open("https://1win.com/game/aviator", "_blank")
+              }
             >
               <Icon name="Play" className="mr-2" size={24} />
               ИГРАТЬ СЕЙЧАС
@@ -51,6 +60,7 @@ const Index = () => {
               size="lg"
               variant="outline"
               className="border-2 border-white text-white hover:bg-white hover:text-game-dark text-xl px-8 py-4"
+              onClick={() => window.open("https://1win.com/mobile", "_blank")}
             >
               <Icon name="Download" className="mr-2" size={20} />
               СКАЧАТЬ ПРИЛОЖЕНИЕ
@@ -192,6 +202,9 @@ const Index = () => {
             <Button
               size="lg"
               className="bg-game-orange hover:bg-orange-600 text-xl px-8 py-4"
+              onClick={() =>
+                window.open("https://1win.com/registration", "_blank")
+              }
             >
               ПОЛУЧИТЬ БОНУС
             </Button>
